@@ -18,10 +18,50 @@ pip3 install requirements.txt
 
 
 
-## Usage Example
+## Quik Start
 
 ```sh
 python3 quikstart.py
+```
+
+
+## Usage Example
+
+#### Import library 
+
+```python3
+from util import word_density
+```
+
+
+
+#### Class
+
+```python3
+file = "Game.of.Thrones.S08E06.srt"
+
+word_density = word_density(file)
+```
+
+
+
+#### Create a DataFrame with a class
+
+```python3
+df = word_density.get_df()
+```
+
+
+
+#### Show Chart
+
+The graph shows 25 values  by default
+
+```python3
+word_density.get_chart()
+```
+```python3
+word_density.get_chart(10)
 ```
 
 
